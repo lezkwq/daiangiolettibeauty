@@ -31,14 +31,19 @@ export function EditorialPhoto({
           className={cn("photo-placeholder w-full overflow-hidden", frameClassName)}
           data-photo-slot={photo.id}
         >
-          <img
-            src={photo.src}
-            alt={photo.alt}
-            loading={priority ? "eager" : "lazy"}
-            decoding="async"
-            style={{ objectPosition }}
-            className="h-full w-full object-cover"
-          />
+          <picture className="block h-full w-full">
+            {photo.desktopSrc ? (
+              <source media="(min-width: 1024px)" srcSet={photo.desktopSrc} />
+            ) : null}
+            <img
+              src={photo.src}
+              alt={photo.alt}
+              loading={priority ? "eager" : "lazy"}
+              decoding="async"
+              style={{ objectPosition }}
+              className="h-full w-full object-cover"
+            />
+          </picture>
         </div>
         {caption ? (
           <figcaption className={cn("label-xs mt-4 text-muted-foreground", captionClassName)}>

@@ -6,24 +6,25 @@ import { PHOTO_ATENDIMENTO, PHOTO_CORTE } from "./photos";
 export function SpaceBlock() {
   return (
     <section id="salao" className="px-6 pb-20 md:px-10 md:pb-32">
-      <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-8">
+      <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-0">
         <EditorialPhoto
           photo={PHOTO_CORTE}
-          className="lg:col-span-6 lg:col-start-2"
-          frameClassName="aspect-[9/16]"
+          className="lg:col-span-12"
+          frameClassName="aspect-[9/16] lg:aspect-[21/9]"
+          objectPosition="center 50%"
         />
-        <div className="grid grid-cols-1 gap-6 lg:col-span-4 lg:col-start-9">
-          <Reveal className="label-xs text-muted-foreground" delay={80}>
+        <div className="grid grid-cols-1 gap-6 lg:col-span-12 lg:mt-8 lg:grid-cols-12">
+          <Reveal className="label-xs text-muted-foreground lg:col-span-2" delay={80}>
             O salão
           </Reveal>
-          <Reveal delay={120}>
-            <h2 className="font-display text-[clamp(1.75rem,4vw,3.25rem)] leading-[1.05] text-foreground">
+          <Reveal className="lg:col-span-5" delay={120}>
+            <h2 className="font-display text-[clamp(1.75rem,4vw,3.25rem)] leading-[1.05] text-foreground lg:text-[clamp(1.75rem,3vw,2.75rem)]">
               Um espaço para
               <br />
               cuidar de você.
             </h2>
           </Reveal>
-          <Reveal delay={180}>
+          <Reveal className="lg:col-span-4 lg:col-start-9" delay={180}>
             <p className="text-sm leading-relaxed text-muted-foreground">
               Um espaço acolhedor para renovar o visual, cuidar dos fios e se sentir bem em cada
               atendimento.
@@ -53,7 +54,7 @@ export function SalaoBlock() {
         <EditorialPhoto
           photo={PHOTO_ATENDIMENTO}
           className="lg:col-span-7 lg:col-start-6"
-          frameClassName="aspect-[4/5]"
+          frameClassName="aspect-[4/5] lg:aspect-[4/3]"
           objectPosition="50% 45%"
           caption="Cuidado e atenção em cada atendimento"
           delay={120}

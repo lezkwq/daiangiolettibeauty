@@ -1,11 +1,31 @@
-import { Instagram, MessageCircle } from "lucide-react";
+import { Instagram } from "lucide-react";
 
+import whatsappIcon from "@/assets/icon-whatsapp.png";
 import { cn } from "@/lib/utils";
 import { INSTAGRAM_URL, WHATSAPP_GERAL } from "./contact";
 
 export interface SocialLinksProps {
   className?: string;
   iconClassName?: string;
+}
+
+function WhatsAppGlyph({ className }: { className: string }) {
+  return (
+    <span
+      aria-hidden="true"
+      className={cn("inline-block bg-current", className)}
+      style={{
+        WebkitMaskImage: `url(${whatsappIcon})`,
+        maskImage: `url(${whatsappIcon})`,
+        WebkitMaskRepeat: "no-repeat",
+        maskRepeat: "no-repeat",
+        WebkitMaskPosition: "center",
+        maskPosition: "center",
+        WebkitMaskSize: "contain",
+        maskSize: "contain",
+      }}
+    />
+  );
 }
 
 export function SocialLinks({ className, iconClassName }: SocialLinksProps) {
@@ -29,7 +49,7 @@ export function SocialLinks({ className, iconClassName }: SocialLinksProps) {
         aria-label="WhatsApp da Dai Angioletti Beauty"
         className="inline-flex transition-opacity hover:opacity-60"
       >
-        <MessageCircle aria-hidden="true" className={icon} />
+        <WhatsAppGlyph className={icon} />
       </a>
     </div>
   );

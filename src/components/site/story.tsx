@@ -45,7 +45,7 @@ export function Story() {
         <EditorialPhoto
           photo={PHOTO_CABELO_LISO}
           className="mt-14 lg:col-span-6 lg:col-start-7 lg:mt-24"
-          frameClassName="aspect-[9/16]"
+          frameClassName="aspect-[9/16] lg:aspect-[16/10]"
           caption="Cabelos castanhos lisos e com brilho"
           delay={120}
         />
@@ -57,11 +57,11 @@ export function Story() {
 /** Capillary care and the Fênix protocol, described without outcome guarantees. */
 export function Therapy() {
   return (
-    <section className="bg-primary px-6 py-24 text-primary-foreground md:px-10 md:py-44">
+    <section className="bg-primary px-6 py-24 text-primary-foreground md:px-10 md:py-44 lg:py-32">
       <div className="mx-auto max-w-[1600px]">
         <Reveal className="label-xs text-primary-foreground/70">Saúde & regeneração capilar</Reveal>
         <Reveal delay={100}>
-          <h2 className="font-display mt-10 max-w-5xl text-[clamp(2.25rem,7vw,6rem)] leading-[0.95]">
+          <h2 className="font-display mt-10 max-w-5xl text-[clamp(2.25rem,7vw,6rem)] leading-[0.95] lg:mt-6 lg:text-[clamp(2.25rem,4.5vw,4.5rem)]">
             Seu cabelo merece
             <br />
             cuidado com
@@ -69,11 +69,11 @@ export function Therapy() {
             intenção.
           </h2>
         </Reveal>
-        <div className="mt-16 grid grid-cols-1 gap-8 md:mt-28 lg:grid-cols-12">
+        <div className="mt-16 grid grid-cols-1 gap-8 md:mt-28 lg:mt-16 lg:grid-cols-12">
           <EditorialPhoto
             photo={PHOTO_FITOTERAPIA}
             className="lg:col-span-6"
-            frameClassName="aspect-[9/16]"
+            frameClassName="aspect-[9/16] lg:aspect-[3/4]"
             caption="Preparo fitoterápico para o cuidado capilar"
             captionClassName="text-primary-foreground/70"
             delay={80}
@@ -141,14 +141,14 @@ export function Dai() {
           <EditorialPhoto
             photo={PHOTO_DAI}
             className="lg:col-span-6 lg:col-start-2"
-            frameClassName="aspect-square"
+            frameClassName="aspect-square lg:aspect-[4/5]"
             caption="Dai Angioletti — saúde & regeneração capilar"
             delay={80}
           />
           <EditorialPhoto
             photo={PHOTO_TRANCAS}
             className="lg:col-span-3 lg:col-start-10 lg:pt-40"
-            frameClassName="aspect-[9/16]"
+            frameClassName="aspect-[9/16] lg:aspect-[3/4]"
             caption="Tranças e penteados"
             delay={200}
           />

@@ -4,6 +4,7 @@ import semiDefinitiva from "@/assets/cabelo-semi-definitiva.jpg";
 import unhasCoral from "@/assets/unhas-coral.jpg";
 import unhasNeutro from "@/assets/unhas-neutro.jpg";
 import corte from "@/assets/corte-curto.jpg";
+import corteDesktop from "@/assets/corte-curto-desktop.jpg";
 import cabeloLiso from "@/assets/cabelo-liso-finalizado.jpg";
 import atendimento from "@/assets/atendimento-salao.jpg";
 import trancas from "@/assets/trancas.jpg";
@@ -14,6 +15,7 @@ export interface Photo {
   readonly label: string;
   readonly alt: string;
   readonly src: string;
+  readonly desktopSrc?: string;
 }
 
 export const PHOTO_DAI: Photo = {
@@ -56,6 +58,7 @@ export const PHOTO_CORTE: Photo = {
   label: "Resultado de corte",
   alt: "Cliente sorrindo com corte curto em camadas e franja.",
   src: corte,
+  desktopSrc: corteDesktop,
 };
 
 export const PHOTO_CABELO_LISO: Photo = {

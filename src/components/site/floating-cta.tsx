@@ -1,4 +1,4 @@
-import { MessageCircle } from "lucide-react";
+import whatsappIcon from "@/assets/icon-whatsapp.png";
 import { WHATSAPP_GERAL } from "./contact";
 
 /** Atalho discreto e persistente para o principal canal de agendamento. */
@@ -12,7 +12,20 @@ export function FloatingCta() {
         aria-label="Agendar pelo WhatsApp"
         className="label-xs flex items-center justify-center gap-3 rounded-full border border-background/20 bg-ink px-6 py-4 text-background transition-opacity hover:opacity-90"
       >
-        <MessageCircle aria-hidden="true" className="h-4 w-4" />
+        <span
+          aria-hidden="true"
+          className="inline-block h-4 w-4 bg-current"
+          style={{
+            WebkitMaskImage: `url(${whatsappIcon})`,
+            maskImage: `url(${whatsappIcon})`,
+            WebkitMaskRepeat: "no-repeat",
+            maskRepeat: "no-repeat",
+            WebkitMaskPosition: "center",
+            maskPosition: "center",
+            WebkitMaskSize: "contain",
+            maskSize: "contain",
+          }}
+        />
         Agendar pelo WhatsApp
       </a>
     </div>
