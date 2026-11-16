@@ -66,7 +66,7 @@ export function Hero() {
             photo={PHOTO_DAI}
             priority
             className="lg:col-span-5 lg:col-start-2"
-            frameClassName="aspect-square"
+            frameClassName="aspect-[4/5] lg:aspect-square"
             objectPosition="50% 45%"
             caption="Dai Angioletti — Saúde & regeneração capilar"
           />

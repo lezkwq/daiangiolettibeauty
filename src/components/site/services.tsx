@@ -91,20 +91,20 @@ export function Services() {
           <EditorialPhoto
             photo={PHOTO_SEMI_DEFINITIVA}
             className="lg:col-span-3 lg:col-start-2"
-            frameClassName="aspect-[9/16] lg:aspect-[4/5]"
+            frameClassName="aspect-[4/5]"
             caption="Cabelos alinhados após a semi-definitiva"
           />
           <EditorialPhoto
             photo={PHOTO_UNHAS_CORAL}
             className="lg:col-span-3 lg:col-start-6 lg:pt-20"
-            frameClassName="aspect-[9/16] lg:aspect-[4/5]"
+            frameClassName="aspect-[4/5]"
             caption="Esmaltação coral"
             delay={140}
           />
           <EditorialPhoto
             photo={PHOTO_UNHAS_NUDE}
             className="lg:col-span-3 lg:col-start-10 lg:pt-40"
-            frameClassName="aspect-[9/16] lg:aspect-[4/5]"
+            frameClassName="aspect-[4/5]"
             caption="Esmaltação em tom nude"
             delay={220}
           />
