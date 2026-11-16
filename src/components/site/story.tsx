@@ -73,7 +73,7 @@ export function Therapy() {
           <EditorialPhoto
             photo={PHOTO_FITOTERAPIA}
             className="lg:col-span-6"
-            frameClassName="aspect-[4/5] lg:aspect-[3/4]"
+            frameClassName="aspect-[4/5] lg:aspect-[4/3]"
             caption="Preparo fitoterápico para o cuidado capilar"
             captionClassName="text-primary-foreground/70"
             delay={80}

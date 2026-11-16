@@ -9,11 +9,11 @@ export function SpaceBlock() {
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-0">
         <EditorialPhoto
           photo={PHOTO_CORTE}
-          className="lg:col-span-12"
+          className="lg:col-span-12 lg:order-2 lg:mt-8"
           frameClassName="aspect-[4/5] lg:aspect-[21/9]"
           objectPosition="center 40%"
         />
-        <div className="grid grid-cols-1 gap-6 lg:col-span-12 lg:mt-8 lg:grid-cols-12">
+        <div className="grid grid-cols-1 gap-6 lg:col-span-12 lg:order-1 lg:mt-8 lg:grid-cols-12">
           <Reveal className="label-xs text-muted-foreground lg:col-span-2" delay={80}>
             O salão
           </Reveal>
