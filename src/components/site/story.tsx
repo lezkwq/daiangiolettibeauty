@@ -45,8 +45,8 @@ export function Story() {
         <EditorialPhoto
           photo={PHOTO_CABELO_LISO}
           className="mt-14 lg:col-span-6 lg:col-start-7 lg:mt-24"
-          frameClassName="aspect-[4/5]"
-          caption="Resultados reais de cabelo — imagem será adicionada"
+          frameClassName="aspect-[9/16]"
+          caption="Cabelos castanhos lisos e com brilho"
           delay={120}
         />
       </div>
@@ -73,8 +73,8 @@ export function Therapy() {
           <EditorialPhoto
             photo={PHOTO_FITOTERAPIA}
             className="lg:col-span-6"
-            frameClassName="aspect-[4/5] lg:aspect-[3/4]"
-            caption="Fitoterapia capilar — imagem será adicionada"
+            frameClassName="aspect-[9/16]"
+            caption="Preparo fitoterápico para o cuidado capilar"
             captionClassName="text-primary-foreground/70"
             delay={80}
           />
@@ -141,14 +141,14 @@ export function Dai() {
           <EditorialPhoto
             photo={PHOTO_DAI}
             className="lg:col-span-6 lg:col-start-2"
-            frameClassName="aspect-[4/5]"
-            caption="Dai Angioletti — retrato em breve"
+            frameClassName="aspect-square"
+            caption="Dai Angioletti — saúde & regeneração capilar"
             delay={80}
           />
           <EditorialPhoto
             photo={PHOTO_TRANCAS}
             className="lg:col-span-3 lg:col-start-10 lg:pt-40"
-            frameClassName="aspect-[3/4]"
+            frameClassName="aspect-[9/16]"
             caption="Tranças e penteados"
             delay={200}
           />

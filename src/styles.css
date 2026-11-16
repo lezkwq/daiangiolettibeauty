@@ -179,13 +179,6 @@
     linear-gradient(135deg, transparent 49.8%, color-mix(in oklch, var(--ink) 5%, transparent) 50%, transparent 50.2%);
 }
 
-.photo-placeholder__ring {
-  position: absolute;
-  width: min(62%, 22rem);
-  aspect-ratio: 1;
-  border: 1px solid color-mix(in oklch, var(--terracotta) 20%, transparent);
-  border-radius: 9999px;
-}
 
 @utility font-display {
   font-family: var(--font-display);

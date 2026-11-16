@@ -10,7 +10,7 @@ export function SpaceBlock() {
         <EditorialPhoto
           photo={PHOTO_CORTE}
           className="lg:col-span-6 lg:col-start-2"
-          frameClassName="aspect-[4/5]"
+          frameClassName="aspect-[9/16]"
         />
         <div className="grid grid-cols-1 gap-6 lg:col-span-4 lg:col-start-9">
           <Reveal className="label-xs text-muted-foreground" delay={80}>

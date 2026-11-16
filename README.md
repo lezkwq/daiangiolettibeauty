@@ -13,7 +13,7 @@ bun run dev
 
 ## Fotos
 
-Os espaços reservados de imagem estão identificados por `data-photo-slot` e registrados em `src/components/site/photos.ts`. Quando as fotos finais chegarem, salve os arquivos otimizados em `src/assets/` e ligue cada slot ao arquivo correspondente em `photos.ts`.
+As fotos ficam em `src/assets/` e seus textos alternativos e identificadores estão registrados em `src/components/site/photos.ts`. Os blocos usam `data-photo-slot` para facilitar ajustes de enquadramento.
 
 ## Informações comerciais
 
