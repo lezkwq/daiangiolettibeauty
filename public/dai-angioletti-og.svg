@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4eee4" />
+  <circle cx="1010" cy="120" r="290" fill="#ead9c6" />
+  <circle cx="1060" cy="120" r="210" fill="none" stroke="#a95c42" stroke-opacity=".28" stroke-width="2" />
+  <path d="M0 515c190-95 300 66 478-16s269-108 438-27 216 62 284 29v129H0Z" fill="#e6d2bd" />
+  <path d="M94 91h1012v448H94z" fill="none" stroke="#a95c42" stroke-opacity=".35" />
+  <text x="132" y="185" fill="#735142" font-family="Arial,sans-serif" font-size="21" letter-spacing="7">SAÚDE CAPILAR • BELEZA • ACOLHIMENTO</text>
+  <text x="126" y="315" fill="#3d3029" font-family="Georgia,serif" font-size="90">Dai Angioletti</text>
+  <text x="132" y="381" fill="#a95c42" font-family="Arial,sans-serif" font-size="28" letter-spacing="5">BEAUTY</text>
+  <text x="132" y="465" fill="#735142" font-family="Arial,sans-serif" font-size="22">Um espaço de cuidado em Camboriú, SC</text>
+</svg>
